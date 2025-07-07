@@ -2,7 +2,7 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY app.jar app.jar
+COPY build/libs/*.jar app.jar
 
 ENV SPRING_PROFILES_ACTIVE=local
 
